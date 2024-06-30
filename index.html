@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kari Games</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/video-game-gamepad-icon.svg" alt="Logo videogame">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Alugue o jogo <span class="page-title__emphasis">desejado:</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/mariobross.png" alt="Capa jogo Mario">
+                    </div>
+                    <p class="dashboard__item__name">Mario Bross</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/valorant.png" alt="Capa jogo Takenoko">
+                    </div>
+                    <p class="dashboard__item__name">Valorant</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img">
+                        <img src="img/stardewvalley.png" alt="Capa jogo stardew valley">
+                    </div>
+                    <p class="dashboard__item__name">Stardew Valley</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
